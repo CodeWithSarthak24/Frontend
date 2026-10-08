@@ -1,0 +1,48 @@
+
+#design {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(7, 135, 139);
+    border: 2px solid rgb(51, 36, 16);
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px crimson;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(225, 225, 99);
+    display: block;
+    margin: 20px auto;
+}
+
+button:focus {
+    outline: 1px solid rgb(78, 78, 99);
+}
+
+/* 
+display: block → makes the button a block so its left/right margins can absorb the extra space.
+margin: auto → tells the browser to divide that extra space equally on both sides. 
+*/

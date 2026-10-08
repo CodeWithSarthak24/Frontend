@@ -1,0 +1,71 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: rgb(216, 216, 234);
+    font-size: large;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+#outer {
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+    margin: 10px;
+    display: grid;
+    gap: 3px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "content-1 content-2 content-2 content-3"
+        "content-1 content-4 content-5 content-6"
+        "content-1 content-7 content-8 content-6";
+}
+
+.Box {
+    padding: 3px;
+    margin: 3px;
+}
+
+.Content-1 {
+    grid-area: content-1;
+    background-color: rgb(235, 79, 17);
+}
+
+.Content-2 {
+    grid-area: content-2;
+    background-color: rgb(59, 210, 13);
+}
+
+.Content-3 {
+    grid-area: content-3;
+    background-color: rgb(42, 202, 103);
+}
+
+.Content-4 {
+    grid-area: content-4;
+    background-color: rgb(55, 190, 224);
+}
+
+.Content-5 {
+    grid-area: content-5;
+    background-color: rgb(87, 60, 207);
+}
+
+.Content-6 {
+    grid-area: content-6;
+    background-color: rgb(206, 54, 168);
+}
+
+.Content-7 {
+    grid-area: content-7;
+    background-color: rgb(57, 210, 159);
+}
+
+.Content-8 {
+    grid-area: content-8;
+    background-color: rgb(219, 41, 41);
+}

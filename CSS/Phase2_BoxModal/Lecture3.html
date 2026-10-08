@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+                         
+<body>
+                                    <!-- Width, Height, Overflow -->
+                                     
+<!-- 
+Question 1 — Responsive Login Form
+
+Create a login form that:
+
+Takes 100% of the available width
+Never becomes wider than 400px
+Has 20px padding
+Has a 2px border
+Uses border-box
+ -->
+
+    <form class="login-form">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button type="submit">Login</button>
+    </form>
+
+
+    <!-- Question 3 — Minimum Width
+
+Create a navigation container:
+
+Requirements:
+Width should normally be 100%
+It should never become narrower than 500px
+If the screen becomes smaller than 500px, the navigation should be horizontally scrollable.
+-->
+
+    <nav class="nav-container">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <!-- Question 9 — Practical max-height
+
+You have a list of notifications:
+
+Requirements:
+Width = 300px
+Maximum height = 300px
+If there are too many notifications, allow vertical scrolling.
+-->
+
+    <div class="notifications">
+        <p>New message</p>
+        <p>New course available</p>
+        <p>New comment</p>
+        many more
+    </div>
+
+
+    <!-- Question 10 — Final Challenge 🔥
+
+Build this CSS requirement:
+
+"Make a responsive card that takes the available width, but never becomes smaller than 250px or larger than 500px. 
+Give it 20px padding and a 2px border. If the card becomes wider than its parent because of the minimum width, 
+allow the parent to scroll horizontally." -->
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Java Full Stack</h2>
+            <p>Learn Java, Spring Boot, React and MySQL.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<!-- A) Responsive login/register forms.
+
+.nav-container {
+    width: 100%;
+    min-width: 500px;
+    overflow-x: auto;
+}
+
+Real-world: content/navigation that must maintain a minimum width and scroll horizontally on smaller screens.
+
+.notifications {
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+Real-world: notification lists, chat messages, dropdown lists. -->

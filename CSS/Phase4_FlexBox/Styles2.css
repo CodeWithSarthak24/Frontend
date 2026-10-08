@@ -1,0 +1,41 @@
+#outer-container {
+    width: 500px;
+    height: 600px;
+    border: 3px solid cadetblue;
+    background-color: aliceblue;
+    display: flex;
+    /* flex-flow: row wrap; */
+    flex-flow: row wrap-reverse;
+    justify-content: flex-start;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.inner-container {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(58, 60, 60);
+    padding: 10px;
+    margin: 5px;
+}
+
+#div1 {
+    background-color: rgb(50, 50, 220);
+}
+
+#div2 {
+    background-color: rgb(62, 225, 225);
+}
+
+#div3 {
+    background-color: rgb(182, 224, 224);
+}
+
+#div4 {
+    background-color: rgb(56, 59, 59);
+}
+
+#div5 {
+    background-color: rgb(219, 88, 212);
+}

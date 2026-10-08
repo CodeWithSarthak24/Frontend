@@ -1,0 +1,91 @@
+/*  px units  */
+#i1{
+    color: rgb(20, 189, 201);
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+
+}
+
+/*  % units  */
+#i2{
+    color: rgb(144, 201, 20);
+    width: 100px;
+    height: 100px;
+    background-color: rgb(163, 108, 108);
+    font-size: 20px;
+}
+#i3{
+    color: rgb(149, 195, 22);
+    width: 20%;   /* 20% of 100px = 20px.  */
+    height: 20%;
+    background-color: rgb(63, 38, 38);
+    font-size: 20%; 
+    /* 20/100=0.2 then 0.2 * 20 = 4 */
+}
+
+/* Parent */
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: goldenrod;
+}
+
+/* Child */
+#box2{
+    height: 50px;
+    /* width: 30%; */
+    /* here by default width will equal to its parent width = 100px */
+    background-color: darksalmon;
+    margin-right: 10%;  /* 10% of 100px width = 10px.  */
+    margin-top: 10%; /* 10% of 100px width = 10px.  */
+    /* In CSS, percentage values for margin-top,left,right,bottom are calculated based on the width of the parent container, not its height. */
+}
+
+/*  em units  */
+
+/* Parent */
+#box3{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(62, 220, 13);
+    font-size: 10px;
+}
+
+/* Child */
+#box4{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(13, 59, 196);
+    font-size: 2em;
+    /* The em unit is based on font size, not the parent element's physical width or height. */
+    /* 2em * 10px = 20px */
+    width: 5em;
+    /* parent font-size * child font-size = 10 * 2 = 20px then 20px * width-child = 20 * 5 = 100px */
+}
+
+/* Note:
+When em is used on font-size: It looks up at the parent's font-size.
+When em is used on width, height, margin, or padding: It looks locally at that same element's own calculated font-size. */
+
+/*  rem units  */  
+#box5{
+    /* default height is 16px = 16px * 5 = 80 */
+    height: 5em;
+    width: 2rem;
+    background-color: orchid;
+}
+
+/*  vw — Viewport Width  */
+#j{
+    width: 5vw;
+    background-color: crimson;
+    /* 1/100 * 5 = 0.05 */
+}
+
+/*  vh — Viewport Height   */
+#s{
+    height: 10vh;
+    background-color: rgb(207, 20, 220);
+     /* 1/100 * 10 = 0.1 */
+}

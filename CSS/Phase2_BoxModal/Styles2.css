@@ -1,0 +1,29 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+} */
+#navbar{
+    background-color: #0f1111;
+    color: white;
+    height: 60px;
+    border: rgb(229, 205, 205);
+    border-width: 8px;
+    border-style: solid;
+}
+#logo{
+    color:#f08804
+}
+#btn{
+    background-color:#f08804;
+    color:white
+}
+a{
+    margin-right:120px;
+}
+input[type="text"]{
+     margin-right:5px;
+     width:200px;
+}
+#shift{
+     margin-right:390px;
+}

@@ -1,0 +1,20 @@
+#heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+#paragraph{
+    font-size: 16px;
+    line-height: 1.6;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+#link{
+    text-decoration: none;
+}
+#link:hover{
+    text-decoration: underline;
+     color: red;
+    /* In CSS, :hover is a pseudo-class used to select and apply 
+    styles to an element when a user moves their cursor (mouse pointer) over it */
+}

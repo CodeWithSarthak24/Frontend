@@ -1,0 +1,84 @@
+#d1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 5px dashed rgb(89, 47, 88);
+    text-align: center;
+    margin-top: 30px;
+}
+
+#d2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(50, 47, 220);
+    border: 5px solid rgb(54, 51, 54);
+    text-align: center;
+    border-radius: 20px;
+     margin-top: 30px;
+}
+
+/* to create circle */
+
+#d3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(27, 26, 91);
+    border: 5px solid rgb(54, 51, 54);
+    text-align: center;
+    border-radius: 50%;
+     margin-top: 30px;
+}
+
+#d4{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(193, 58, 58);
+    border: 5px solid rgb(130, 105, 130);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+#d5{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+/* ----- */
+#d6{
+    width: 105px;
+    height: 280px;
+    background-color: black;
+    padding: 5px;
+}
+
+.shape {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+
+#color-red{
+     background-color: red;
+}
+#color-green{
+     background-color: yellow;
+}
+#color-yellow{
+     background-color: green;
+}
+
+/* ----- */
+#l1{
+    height: 60px;
+    /* font-size: 25px; */
+    background-color: #0f1111;
+    color: orange;
+    border-width: 6px;
+    border-color: rgb(176, 141, 95);
+    border-style: solid;
+  
+}

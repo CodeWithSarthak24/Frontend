@@ -1,0 +1,68 @@
+#profile-card {
+    width: 300px;
+    height: 400px;
+    background-color: aquamarine;
+    border: 3px solid rgb(19, 18, 18);
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 12px darkgoldenrod;
+}
+
+#badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#profile-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Situation	        Property
+background-image	background-size
+<img>	            object-fit */
+
+
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background-color: rgb(159, 166, 164);
+    cursor: pointer;
+    display: block;
+}
+
+button:focus {
+    outline: 2px solid rgb(56, 187, 0);
+}
+
+button:hover {
+    background-color: rgb(100, 110, 108);
+}
+
+/* :hover is for the MOUSE. It happens when you point at the button. 
+:focus is for the KEYBOARD. It happens when you land on the button using the Tab key. */

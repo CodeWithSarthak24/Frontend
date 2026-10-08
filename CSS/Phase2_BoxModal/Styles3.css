@@ -1,0 +1,33 @@
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    width: 100%;
+    min-width: 500px;
+    overflow-x: auto;
+}
+
+.notifications {
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.card-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.card {
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid rgb(89, 69, 89);
+    box-sizing: border-box;
+}

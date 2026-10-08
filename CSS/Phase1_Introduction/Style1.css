@@ -1,0 +1,34 @@
+/* element selectors */
+h1{
+    color: goldenrod;
+}
+
+/* id selectors */
+#h2-style{
+    color: paleturquoise;
+}
+
+/* class selectors */
+.h3-style{
+    color: plum;
+}
+
+/* group selectors */
+h4,h5,h6{
+    color: gray;
+}
+
+/* Universal Descendant selectors 
+ *{
+    color: orange;
+} */
+
+/*  Descendant selectors */
+.h3 p{
+    color: khaki;
+}
+
+/* Child Selector */
+.h4 > p{
+    color: greenyellow;
+}

@@ -1,0 +1,99 @@
+/* Color Names */
+#h1 {
+    color: rgb(9, 60, 104);
+}
+
+/* 2. HEX Colors */
+#h2 {
+    color: #ff0000;
+}
+
+/* Shorthand */
+#h3 {
+    color: #00f;
+}
+
+/* 3. RGB */
+#p1 {
+    color: rgb(0, 255, 0);
+    /* green */
+}
+
+/* 4. RGBA */
+#p2 {
+    color: rgba(0, 0, 0, 1);
+    /* completely opaque */
+
+}
+
+#p3 {
+    color: rgba(0, 255, 255, 0);
+    /* completely transparent */
+
+}
+
+/* 5. HSL */
+#h4 {
+    color: hsl(147, 100%, 40%);
+}
+
+/* 6. HSLA */
+#h5 {
+    color: hsla(147, 100%, 50%, 0.5);
+}
+
+/* 7. Background Color */
+#h6 {
+    background-color: #0f0;
+}
+
+/* 8. Background Image */
+#img1 {
+    background-image: url('bug.png');
+
+    /* 1. Prevents the image from repeating/tiling */
+    background-repeat: no-repeat;
+
+    /* 2. FORCES the whole image to shrink and fit inside the box */
+    background-size: contain;
+    min-height: 70px
+}
+
+/* 9. Background Position */
+#img2 {
+    background-image: url('bug.png');
+
+    /* 1. Prevents the image from repeating/tiling */
+    background-repeat: no-repeat;
+
+    /* 2. FORCES the whole image to shrink and fit inside the box */
+    background-size: contain;
+
+    /* image height */
+    min-height: 85px;
+
+    /* right top  */
+    /* background-position: 100% 0%; */
+    background-position: center top;
+}
+
+/* 10 Background Repeat */
+#img3 {
+    background-image: url('bug.png');
+
+    /* 1. Prevents the image from repeating/tiling */
+    background-repeat: no-repeat;
+
+    /* 2. FORCES the whole image to shrink and fit inside the box */
+    background-size: contain;
+
+    /* image height */
+     min-height: 85px; 
+
+    /* right top  */
+    /* background-position: 100% 0%; */
+    background-position: center top;
+   
+}
+
+

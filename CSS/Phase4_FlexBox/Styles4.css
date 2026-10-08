@@ -1,0 +1,51 @@
+#outer {
+    width: 500px;
+    height: 600px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px auto;
+    display: flex;
+    flex-flow: row wrap;
+     align-content: center;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+     /* align-content: space-evenly; */
+     /* align-content: stretch; */
+
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    border: 3px double black;
+    padding: 5px;
+    margin: 4px;
+}
+
+#div1 {
+    background-color: rgb(221, 79, 79);
+}
+
+#div2 {
+    background-color: rgb(61, 223, 223);
+}
+
+#div3 {
+    background-color: rgb(223, 175, 104);
+
+}
+
+#div4 {
+    background-color: rgb(160, 214, 9);
+}
+
+#div5 {
+    background-color: rgb(74, 20, 199);
+}
+
+#div6 {
+    background-color: rgb(215, 51, 191);
+
+}

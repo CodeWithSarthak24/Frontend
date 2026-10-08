@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: rgb(216, 216, 234);
+    font-size: large;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+#outer {
+    width: 600px;
+    height: 600px;
+    padding: 5px;
+    display: grid;
+    gap: 3px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "Sidebar Header Header"
+        "Sidebar Java SpringBoot"
+        "Sidebar React MySQL";
+}
+
+.Box {
+    padding: 5px;
+    margin: 3px;
+}
+
+.Sidebar {
+    background-color: rgb(40, 139, 226);
+    grid-area: Sidebar;
+    text-align: center;
+}
+
+.Header {
+    background-color: rgb(86, 146, 146);
+    grid-area: Header;
+    text-align: center;
+}
+
+.Java {
+    background-color: rgb(138, 66, 206);
+    grid-area: Java;
+}
+
+.SpringBoot {
+    background-color: rgb(209, 62, 62);
+    grid-area: SpringBoot;
+}
+
+.React {
+    background-color: rgb(204, 88, 204);
+    grid-area: React;
+}
+
+.MySQL {
+    background-color: rgb(145, 218, 71);
+    grid-area: MySQL;
+}

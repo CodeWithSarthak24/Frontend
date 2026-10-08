@@ -1,0 +1,60 @@
+#outer {
+    width: 400px;
+    height: 600px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.inner {
+    width: 50px;
+    height: 50px;
+    border: 3px double black;
+    padding: 5px;
+    margin: 4px;
+}
+
+#div1 {
+    background-color: rgb(221, 79, 79);
+    /* align-self: flex-end; */
+    /* flex-shrink: 2; */
+    /* order: 1; */
+    /* flex: 1 2 100px; */
+    flex-basis: 120px;
+    flex-grow: 3;
+    flex-shrink: 5;
+   
+}
+
+#div2 {
+    background-color: rgb(61, 223, 223);
+    /* align-self:center;*/
+    /* flex-shrink: 3; */
+    /* order: 7; */
+}
+
+#div3 {
+    background-color: rgb(223, 175, 104);
+    /* flex-grow: 1; */
+    /* order: 3; */
+}
+
+#div4 {
+    background-color: rgb(160, 214, 9);
+    /* flex-grow: 9; */
+    /* order: 11; */
+}
+
+#div5 {
+    background-color: rgb(74, 20, 199);
+    /* flex-shrink: 0; */
+    /* order: 5; */
+}
+
+#div6 {
+    background-color: rgb(215, 51, 191);
+    /* order: 4; */
+}

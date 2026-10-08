@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    /* Center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+img {
+    /* width: 200px;
+    height: 300px;
+    object-fit: cover; */
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/*
+Optimised way
+ #outer {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+}
+*/
+
+#outer {
+    width: 100%;
+    max-width: 800px;
+    /* height: 300px; */
+    height: auto;
+    /* FIXED: Changed from 300px to let it scale naturally */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+@media screen and (max-width: 728px) {
+    #outer {
+        /*  width: 410px;
+        height: 590px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 5px;*/
+        /* FIXED: Removed fixed 410px width & 590px height */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        justify-items: center;
+        /* Centers the 200px wide images inside the 1fr columns */
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #outer {
+        /*  width: 200px;
+        height: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+*/
+        /* FIXED: Removed fixed 200px width & 500px height */
+        grid-template-columns: 1fr;
+        gap: 5px;
+        justify-items: center;
+    }
+}

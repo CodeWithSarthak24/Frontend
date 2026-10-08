@@ -1,0 +1,33 @@
+h2 {
+    display: inline;
+}
+
+h3 {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    color: #a33939;
+    background-color: rgb(145, 167, 186);
+    padding: 10px;
+    margin: 10px;
+}
+
+h4 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: #a33939;
+    background-color: rgb(145, 167, 186);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    display: none;
+    width: 100px;
+    height: 100px;
+    color: #a33939;
+    background-color: rgb(145, 167, 186);
+    padding: 10px;
+    margin: 10px;
+}

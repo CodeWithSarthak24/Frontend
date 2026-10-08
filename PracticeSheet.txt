@@ -1,0 +1,255 @@
+HTML & CSS Test
+
+Name: Sarthak sen
+Date: 03/10/26
+
+Section A - Multiple choice (15 x 2 pts)
+
+1. Which tag holds metadata such as the page title?
+
+Ans: a) <head>
+
+2. Which element is best for the main navigation links?
+
+Ans: b) <nav>
+
+3. Which attribute gives an image text for screen readers?
+
+Ans: c) alt
+
+4. What does <!DOCTYPE html> do?
+
+Ans: c) Tells the browser to use standards mode (HTML5)
+
+5. Which is the correct way to link an external stylesheet?
+
+Ans: b) <link rel='stylesheet' href='a.css'>
+
+6. Which selector has the highest specificity?
+
+Ans: a) #note
+
+7. In the box model, what is the order from inside to outside?
+
+Ans: b) content, padding, border, margin
+
+8. Which declaration creates a flex container?
+
+Ans: a) display: flex
+
+9. Which property centers flex items along the MAIN axis?
+
+Ans: b) justify-content
+
+10. What does box-sizing: border-box do?
+
+Ans: a) Adds border outside the width
+
+11. Which unit is relative to the root element's font size?
+
+Ans: c) rem
+
+12. Which value positions an element relative to its nearest positioned ancestor?
+
+Ans: position: absolute
+
+13. What does a:hover select?
+
+Ans: c) Links under the pointer
+
+14. Which media query targets screens 600px wide or narrower?
+
+Ans: b) @media (max-width:600px)
+
+15. Which CSS creates a grid with three equal columns?
+
+Ans: a) grid-template-columns: repeat(3, 1fr)
+
+
+Section B - Short answers (6 x 5 pts)
+
+1. Explain the difference between <div> and <span>.
+
+Ans: 
+
+<div>:
+
+It is used to create container and style them using css.
+It is block level element.
+It is used to apply css on html element such as section, flex box, grid and more.
+
+<span>:
+
+It is used to create container and style them using css.
+It is inline level element.
+It is used when you want to apply css on small text
+
+
+2. Name three semantic HTML5 elements and what each is for.
+
+Ans:
+
+a) Header: It primarily used for creating top section of web page which include navbar, heading, etc.
+
+b) Main: It represent as main section of page and which contain body. 
+It include <section> which is contain relative information about web page.
+It include <article> which contain independent information related to section but not a part of section.
+It <aside> which contain additional information related to your section.
+
+c) <Footer>: It represent as bottom section of page which contain information such address, contact detail, phone number, etc.
+
+
+3. What is CSS specificity? Rank inline style, ID, class and element selectors.
+
+Ans: Line of code execute from top to bottom.
+
+style -> ID selector -> class selector -> universal selector -> element selector
+
+
+4. Explain the difference between Flexbox and CSS Grid. When would you use each?
+
+Ans:
+
+Flexbox: It is an one dimensional css layout used to arrange element in row and columns and control space between them.
+
+Gridbox: It is an two dimensional css layout used to arrange element in row and columns and control space between them.
+
+
+5. What is the difference between display:none and visibility:hidden?
+
+Ans: 
+
+display:none : By default property it does nothing element.
+
+display:block : It change the element from inline to block. These element starting from next line and occupy full space horizontally and space does not depend upon content dimension.
+
+display:inline : It change the element from block to inline. These element starting from same line and occupy space bases on content. But if we apply height, width, padding and margin
+to element then, horizontal dimension will get shrink.
+
+display:inline-block : It element behave like inline but horizontal dimension will not shrink.
+
+display:flex : It is apply on parent container to make containera flex container and it direct child become flex items.
+
+display:grid : It is apply on parent container to make containera grid container and it direct child become grid items.
+
+visibility:hidden: It make an html element hidden but the space will remain there.
+
+
+6. What is a mobile-first approach in CSS?
+
+Ans: To make responsive website we generally follow the mobile-first approach start from smaller display ans use
+
+@media screen (and min-width:600px){
+    .container{
+        template-grid-columns: repeat(autofit, minmax(200px, 1fx));
+    }
+}
+
+
+Section C - Coding tasks (4 x 10 pts)
+
+1.Write HTML for a form with: a labelled text input (name), a labelled email input (required), a dropdown
+with 3 options, and a submit button.
+
+Code: 
+
+<body>
+
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="Enter your email" name="eamil" required>
+
+<select name="job_role" id="job_role"> 
+  <option value="none">None</option>
+  <option value="saleforce">Saleforce</option>
+  <option value="devops">DevOps</option>
+</select>
+
+<button type="submit" id="btn" name="button">Submit</button>
+
+</body>
+
+
+2. A <nav class="bar"> contains a logo <span> and three links. Use Flexbox so the logo is on the left, the
+links are on the right, everything is vertically centered, and there is a 12px gap between the links.
+Height: 60px.
+
+Code:
+
+<body>
+
+<nav class="bar" style="display:flex; 
+justify-content: center; align-items: center; gap: 12px; height: 60px ">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Login</a>
+</nav>
+
+</body>
+
+
+3. 3. Grid page layout (10 pts)
+Using CSS Grid, build a page with a header across the top, a 200px sidebar on the left, a main area that
+fills the rest, and a footer across the bottom. Use grid-template-areas. The page must be at least 100vh
+tall.
+
+Code:
+
+<body>
+
+<div class="container">
+    <header class="header">Header Area</header>
+    <aside class="sidebar">Sidebar Area</aside>
+    <main class="main-content">Main Content Area</main>
+    <footer class="footer">Footer Area</footer>
+  </div>
+
+</body>
+
+ <style>
+
+    .container {
+      display: grid;
+    
+      grid-template-columns: 200px 1fr; 
+      grid-template-rows: 1fr ; 
+      min-height: 100vh;
+      box-sizing: border-box;
+
+      grid-template-areas:
+          "header  header"
+          "sidebar main"
+          "footer  footer";
+    }
+
+    .header {
+      grid-area: header;
+      padding: 10px;
+      text-align: center;
+      background-color: blue;
+      color: white;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      padding: 10px;
+      background-color: blue;
+      color: white;
+    }
+
+    .main-content {
+      grid-area: main;
+      padding: 20px;
+      background-color: blue;
+    }
+
+    .footer {
+      grid-area: footer;
+      padding: 10px;
+      text-align: center;
+      background-color: black;
+      color: white;
+    }
+  </style>

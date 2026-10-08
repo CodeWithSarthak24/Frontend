@@ -1,0 +1,41 @@
+#outer-container {
+    width: 600px;
+    height: 500px;
+    border: 3px solid rgb(219, 129, 11);
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse;
+    justify-content: space-between; */
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.inner-container {
+    width: 100px;
+    height: 120px;
+    border: 2px solid black;
+    padding: 10px;
+    /* margin: 10px auto; */
+}
+
+#div-1 {
+    background-color: aqua;
+}
+
+#div-2 {
+    background-color: rgb(58, 34, 216);
+}
+
+#div-3 {
+    background-color: rgb(28, 216, 56);
+}
+
+#div-4 {
+    background-color: rgb(51, 77, 77);
+}
+
+#div-5 {
+    background-color: rgb(231, 109, 22);
+}

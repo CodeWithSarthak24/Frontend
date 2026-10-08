@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+
+<style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header & Navigation Styling */
+        header {
+            background-color: #2f3e46;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h2 {
+            margin: 0 0 10px 0;
+        }
+        nav a {
+            color: #cad2c5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+
+        /* Layout Structure (Main & Sidebar side-by-side) */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 30px;
+        }
+
+        /* Left Side: Learning Roadmap Section */
+        section {
+            flex: 3;
+            min-width: 300px;
+        }
+        section h2 {
+            color: #2f3e46;
+            border-bottom: 3px solid #52796f;
+            padding-bottom: 10px;
+        }
+
+        /* Grid Layout for the Phase Cards */
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Modern Card Styling for Articles */
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 5px solid #52796f;
+        }
+        article h3 {
+            margin-top: 0;
+            color: #354f52;
+        }
+        ol {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Right Side: Sidebar Styling */
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            align-self: flex-start;
+        }
+        aside h3 {
+            color: #2f3e46;
+            margin-top: 0;
+        }
+        aside a {
+            display: inline-block;
+            background-color: #52796f;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        aside a:hover {
+            background-color: #354f52;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2f3e46;
+            color: #cad2c5;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.9rem;
+            margin-top: 50px;
+        }
+        footer p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2 style="text-align: center;">Course Tutorial</h2>
+
+        <nav style="text-align: center;">
+            <a href="home.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>CSS Learning Roadmap — Quick Overview</h2>
+
+            <article>
+
+                <h3>Phase 1 — Foundations</h3>
+
+                <ol>
+                    <li>
+                        Introduction to CSS
+                    </li>
+                    <li>
+                        Selectors
+                    </li>
+                    <li>
+                        Colors & Backgrounds
+                    </li>
+                    <li>
+                        CSS Units
+                    </li>
+                </ol>
+
+            </article>
+
+            <article>
+
+                <h3>Phase 2 — Box Modal & Layouts</h3>
+
+                <ol>
+                    <li>
+                        Box Model
+                    </li>
+                    <li>
+                        Width, Height & Overflow
+                    </li>
+                    <li>
+                        Display
+                    </li>
+                    <li>
+                        Positioning
+                    </li>
+                </ol>
+
+            </article>
+
+            <article>
+
+                <h3>Phase 3 — Typography</h3>
+
+                <ol>
+                    <li>
+                        Text & Fonts
+                    </li>
+                    <li>
+                        Borders, Shadows & Effects
+                    </li>
+                </ol>
+
+            </article>
+
+            <article>
+
+                <h3>Phase 4 — Flexbox</h3>
+
+                <ol>
+                    <li>
+                        Flexbox Fundamentals
+                    </li>
+                    <li>
+                        Flexbox Alignment
+                    </li>
+                    <li>
+                        Flexbox Item Properties
+                    </li>
+                </ol>
+
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h3>Quick References</h3>
+
+            <a href="https://www.geeksforgeeks.org/css/css-cheat-sheet-a-basic-guide-to-css/">
+                Go and check out our cheatsheet
+            </a>
+
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>Our roadmaps is optimized for learning and training. Examples might be simplified to improve reading and
+            learning.
+            Tutorials, references, and examples are constantly reviewed to avoid errors.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

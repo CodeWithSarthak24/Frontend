@@ -1,0 +1,43 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 218, 218);
+}
+
+/* Mobile -> Tablet -> Laptop */
+/* Default : Mobile (Screens below 768px) */
+
+#outer {
+    width:300px;
+    height: 300px;
+    font-size: smaller;
+    background-color: rgb(32, 151, 236);
+}
+
+/* Tablet (Screens 768px and up) */
+
+@media screen and (min-width: 768px) {
+    #outer {
+        width: 500px;
+        height: 500px;
+        font-size: small;
+        background-color: rgb(155, 221, 33);
+    }
+}
+
+/* Laptop  / Desktop (Screens 1024px and up) */
+
+@media screen and (min-width: 1024px) {
+    #outer {
+        width: 700px;
+        height: 700px;
+        font-size: medium;
+        background-color: rgb(215, 59, 31);
+    }
+}
+

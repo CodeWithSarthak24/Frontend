@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+
+<body>
+
+    <!-- The CSS property white-space: nowrap; tells the browser "never break this text into a new line." -->
+
+    <table border="5">
+
+        <caption style="white-space: nowrap;">Java Full Stack Course Details</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">
+                    Course Module
+                </th>
+                <th scope="col">
+                    Technology
+                </th>
+                <th scope="col">
+                    Duration
+                </th>
+                <th scope="col">
+                    Status
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Module 1: OOPS</th>
+                <td>Core Java</td>
+                <td>2 weeks</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <th scope="row">Module 2: Exceptions Handling</th>
+                <td>Core Java</td>
+                <td>1 weeks</td>
+                <td>Done</td>
+            </tr>
+            <tr>
+                <th scope="row">Module 3: Multithreading</th>
+                <td>Core Java</td>
+                <td>2 weeks</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <th scope="row">Module 4: Collections Framework</th>
+                <td>Advanced Java</td>
+                <td>2 weeks</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Number of Modules</th>
+                <td>4</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

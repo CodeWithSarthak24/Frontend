@@ -1,0 +1,36 @@
+#outer {
+    width: 500px;
+    height: 600px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    align-items: stretch;
+    /* align-items: baseline; */
+}
+
+.inner {
+    width: 100px;
+    height: 400px;
+    border: 3px double black;
+    padding: 5px;
+    margin: 4px;
+}
+
+#div1 {
+    background-color: rgb(221, 79, 79);
+    /* height: 400px;  */
+}
+
+#div2 {
+    background-color: rgb(61, 223, 223);
+}
+
+#div3 {
+    background-color: rgb(223, 175, 104);
+
+}

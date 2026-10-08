@@ -1,0 +1,28 @@
+#sty1{
+width: 350px;
+height: 200px;
+padding: 20px;
+Border: 1px solid black;
+border-radius: 10px;
+box-sizing: border-box;
+background-color: white;
+box-shadow: 0px 0px 10px rgb(154, 85, 219);
+}
+
+#img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+#btn{
+width: 50px;
+height: 20px;
+border-radius: 10%;
+background-color: cyan;
+object-fit: cover;
+}
+
+#btn:focus{
+outline: 1px solid rgb(136, 136, 210);
+}

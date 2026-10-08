@@ -1,0 +1,57 @@
+#nav-bar {
+    height: 80px;
+    background-color: rgba(237, 136, 5, 0.882);
+    display: flex;
+    /* Space between flex items */
+    gap: 50px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 2px 2px 12px rgb(2, 52, 72);
+    padding: 10px;
+    position: sticky;
+    /* Vertically center the links */
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+}
+
+#nav-bar a {
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#nav-bar img {
+    position: absolute;
+    width: 14px;
+    top: 10px;
+    right: 10px;
+    /* object-fit: cover; */
+    /* For your small SVG icon, dont use: */
+    padding: 2px;
+}
+
+main {
+    padding: 30px;
+}
+
+.content {
+    height: 400px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.934);
+    border-radius: 10px;
+}
+
+footer{
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.934);
+    border-radius: 10px;
+} 
+
+footer a{
+ text-decoration: none;
+}
