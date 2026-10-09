@@ -2,6 +2,8 @@
 
 console.log("Rohit">"Rahit");
 
+console.log(10 < "6"); // "6" is converted to number 6
+
 console.log("Microsoft"<"Infosys");
 
 console.log("Microsoft">"Microsofz");
