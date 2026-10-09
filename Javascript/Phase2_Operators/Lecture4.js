@@ -48,3 +48,9 @@ if(sign_in === true){
     console.log("SignIn Failed");
 }
 
+// 3. JavaScript if...else if...else Statement
+
+let age = 24;
+
+
+// 4. JavaScript Switch Statement
