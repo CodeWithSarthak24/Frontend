@@ -61,3 +61,16 @@ if (age <= 12) {
 }
 
 // 4. JavaScript Switch Statement
+
+let day = "Monday";
+
+switch(day){
+    case "Monday":
+        console.log("Day : Monday");
+        break;
+        case "Tuesday":
+        console.log("Day : Tuesday");
+        break;
+        default:
+        console.log("Invalid");
+}
