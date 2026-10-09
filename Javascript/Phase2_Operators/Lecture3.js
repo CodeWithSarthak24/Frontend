@@ -8,8 +8,6 @@ console.log("Microsoft"<"Infosys");
 
 console.log("Microsoft">"Microsofz");
 
-// console.log(10<true);
-
 // Operator Precedence
 
 console.log(10 + 20 * 5); // 110 not 150
@@ -31,3 +29,7 @@ console.log(parseFloat("100px"));
 
 // 100.01 (it stops at 'x')
 console.log(parseFloat("100.01x"));
+
+console.log(NaN < NaN); // false
+console.log(NaN === NaN); // false
+console.log(NaN == NaN); // they not same at all
