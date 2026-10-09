@@ -30,3 +30,21 @@ do {
 
 // JavaScript Control Flow Statements
 
+// 1. JavaScript if Statement
+
+console.log("JavaScript if Statement");
+
+let login = true;
+if(login == true){
+    console.log("Login Sucess");
+}
+
+// 2. JavaScript if...else Statement
+
+let sign_in = false;
+if(sign_in === true){
+    console.log("SignIn Success");
+}else{
+    console.log("SignIn Failed");
+}
+
