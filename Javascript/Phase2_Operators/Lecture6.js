@@ -40,3 +40,20 @@ while (y <= 40) {
     }
     console.log("Remaining Number : " + y);
 }
+
+/*
+Dry Run:
+
+• Iteration 1: y starts at 30 and 30 <= 40 is true.
+	• The if statement checks: 30 % 3 === 0. This is true (30 divides evenly by 3).
+	• The continue statement triggers.
+	• The Problem: continue instantly stops the current turn and forces the code to jump back to the top of the loop.
+Because continue skips everything below it, the program never reaches the y++ at the bottom.
+
+• Iteration 2: y is still 30. 30 <= 40 is true.
+	• 30 % 3 === 0 is still true.
+	• continue triggers again.
+	• It skips y++ again.
+This repeats forever. y stays 30, the loop never ends, and your program crashes.
+
+*/
