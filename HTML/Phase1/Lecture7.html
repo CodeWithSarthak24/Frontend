@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Job Application: Senior Web Developer</h1>
+
+    <p>Thank you for your interest in joining our teams. Please fill out the application below.</p>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <h2>Personal Information</h2>
+
+        <label for="full_name">Full Name:</label>
+        <br>
+        <input type="text" id="full_name" name="full_name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$">
+        <br><br>
+
+        <label for="linkedln_profile_url">Linkedln Profile URL:</label>
+        <br>
+        <input type="url" id="linkedln_profile_url" name="linkedln_profile_url" required>
+        <br><br>
+
+        <hr>
+
+        <h2>Professional Experience</h2>
+
+        <label for="resume_doc">Upload Your Resume (PDF or DOCX)</label>
+        <br>
+        <input type="file" name="file" id="resume_doc" required>
+        <br><br>
+
+        <label for="cover_letter">Cover Letter:</label>
+        <br>
+        <textarea name="" cover_letter" id="" cover_letter" rows="10" cols="25" required></textarea>
+        <br><br>
+
+        <label for="experience">Years of Professional Experience:</label>
+
+        <select name="experience" id="experience" required>
+            <option value="" disabled selected>Select</option>
+            <option value="fresher">fresher</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="senier">Senier</option>
+        </select>
+        <br><br>
+
+        <label for="work_mode">Preferred Work Type:</label>
+        <br>
+        <select name="work_mode" id="work_mode" required>
+            <option value="" disabled selected>Select</option>
+            <option value="full_time">Full-Time</option>
+            <option value="work_from_home">Work From Home</option>
+            <option value="work_from_office">Work From Office</option>
+        </select>
+        <br><br>
+
+        <hr>
+
+        <h2>Final Confirmation</h2>
+
+        <input type="checkbox" id="final_confirmation" name="final_confirmation" required>
+        <label for="final_confirmation">I am legally authorized to work in this country.</label>
+        <br><br>
+
+        <label for="discovery-source">How did you hear about us?</label>
+        <select id="discovery-source" name="discovery_source">
+            <option value="" disabled selected>Select an option</option>
+            <option value="search_engine">Search Engine (Google, Bing)</option>
+            <option value="social_media">Social Media</option>
+            <option value="word_of_mouth">Friend or Colleague</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <button type="submit" id="submit-button">Submit Application</button>
+
+        <button type="reset" id="reset-button">Re-summit</button>
+
+    </form>
+
+</body>
+
+</html>
+
+<!-- When you add value="..." inside the HTML tag, 
+   it sets the starting position of the slider when the page first loads. -->
+<!-- <input type="range" min="0" max="100" value="10" step="10">  -->
+
+<!-- • ❌ Bad: id="Discovery-source" or id="Discovery Source"
+• Good: id="discovery-source" or id="discovery_source" -->
+
+<!-- Yes, the id and name attributes can have the exact same value. 
+In fact, giving them the same name is a very common practice among web developers because it keeps your code organized.
+<select id="discovery_source" name="discovery_source"> -->
